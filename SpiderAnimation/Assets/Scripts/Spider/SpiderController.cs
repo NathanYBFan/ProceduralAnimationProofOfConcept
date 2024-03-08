@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class SpiderController : MonoBehaviour
 {
@@ -29,15 +29,29 @@ public class SpiderController : MonoBehaviour
     [SerializeField]
     private float maxDistFromTarget = 2;
 
+    [SerializeField]
+    private float stepHeight = 1;
+
+    [SerializeField]
+    private float moveSpeed = 1;
+
     // Private variables
     private Vector3[] pastPosition;
+    private Vector3[] currentPosition;
+    private Vector3[] newPosition;
+    private float lerp = 1;
+
 
     private void Awake()
     {
         pastPosition = new Vector3[feetPoints.Length];
+        newPosition = new Vector3[feetPoints.Length];
         // Assign past position properly
         for (int i = 0; i < feetPoints.Length; i++)
+        {
             pastPosition[i] = feetPoints[i].transform.position;
+            newPosition[i] = feetPoints[i].transform.position;
+        }
     }
 
     private void Update()
@@ -60,14 +74,25 @@ public class SpiderController : MonoBehaviour
         for (int i = 0; i < legPoints.Length; i++)
         {
             RaycastHit raycastHit;
-            Vector3 movePos = new Vector3();
-            movePos = pastPosition[i];
+            Vector3 movePos = pastPosition[i];
 
             // Check if should move leg
             if (Vector3.Distance(targetFeetPoints[i].transform.position, feetPoints[i].transform.position) > maxDistFromTarget)
             {
                 movePos = targetFeetPoints[i].transform.position;
-                pastPosition[i] = targetFeetPoints[i].transform.position;
+                newPosition[i] = targetFeetPoints[i].transform.position;
+            }
+            if (lerp < 0)
+            {
+                movePos = Vector3.Lerp(pastPosition[i], newPosition[i], lerp);
+                movePos.y += Mathf.Sin(lerp * Mathf.PI) * stepHeight;
+
+                currentPosition[i] = movePos;
+                lerp += Time.deltaTime * moveSpeed;
+            }
+            else
+            {
+                pastPosition[i] = newPosition[i];
             }
 
             // If floor is found
