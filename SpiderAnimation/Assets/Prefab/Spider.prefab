@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8722359099290151486}
   - component: {fileID: 8189000799063038044}
+  - component: {fileID: 1708017847318689074}
   m_Layer: 0
   m_Name: L_Leg4
   m_TagString: Untagged
@@ -58,6 +59,25 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!114 &1708017847318689074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835113590612547635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5ad28dc93794c40b168e6f6461a950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feetPoint: {fileID: 5050399257091982411}
+  feetTarget: {fileID: 6467386951116261643}
+  spiderController: {fileID: 7773524638843151364}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  distanceBeforeReset: 3
 --- !u!1 &954299764234264932
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,6 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 994722641784955945}
   - component: {fileID: 108845897403627604}
+  - component: {fileID: 6217822115176206694}
   m_Layer: 0
   m_Name: L_Leg3
   m_TagString: Untagged
@@ -209,6 +230,25 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!114 &6217822115176206694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769083158617426867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5ad28dc93794c40b168e6f6461a950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feetPoint: {fileID: 7889054508323007124}
+  feetTarget: {fileID: 2646636566389599161}
+  spiderController: {fileID: 7773524638843151364}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  distanceBeforeReset: 3
 --- !u!1 &2107246188925515407
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,6 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3431412230810493823}
   - component: {fileID: 8063656930561282092}
+  - component: {fileID: 4943343897107304065}
   m_Layer: 0
   m_Name: R_Leg1
   m_TagString: Untagged
@@ -360,6 +401,25 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!114 &4943343897107304065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3856937791866327129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5ad28dc93794c40b168e6f6461a950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feetPoint: {fileID: 617949220312687492}
+  feetTarget: {fileID: 2107246188925515407}
+  spiderController: {fileID: 7773524638843151364}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  distanceBeforeReset: 3
 --- !u!1 &4100775454972423259
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7580529188685418716}
   - component: {fileID: 6309906550604326886}
+  - component: {fileID: 8198638772459449763}
   m_Layer: 0
   m_Name: R_Leg4
   m_TagString: Untagged
@@ -418,6 +479,25 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!114 &8198638772459449763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4100775454972423259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5ad28dc93794c40b168e6f6461a950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feetPoint: {fileID: 2347773357087558499}
+  feetTarget: {fileID: 954299764234264932}
+  spiderController: {fileID: 7773524638843151364}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  distanceBeforeReset: 3
 --- !u!1 &4446588556410415756
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,31 +762,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainBody: {fileID: 5708182615965973084}
-  legPoints:
-  - {fileID: 5674238735641558526}
-  - {fileID: 5171989965590163321}
-  - {fileID: 2646636566389599161}
-  - {fileID: 6467386951116261643}
-  - {fileID: 2107246188925515407}
-  - {fileID: 7559968821419961101}
-  - {fileID: 9155867263019602733}
-  - {fileID: 954299764234264932}
-  feetPoints:
-  - {fileID: 5131417826139513008}
-  - {fileID: 7792865485805977430}
-  - {fileID: 7889054508323007124}
-  - {fileID: 5050399257091982411}
-  - {fileID: 617949220312687492}
-  - {fileID: 8966487901455314411}
-  - {fileID: 1060590851438838856}
-  - {fileID: 2347773357087558499}
   layerMask:
     serializedVersion: 2
     m_Bits: 256
   bodyHoverHeight: 1.5
-  stepHeight: 1
-  moveSpeed: 1
-  localOriginalFeetPosition: []
 --- !u!1 &6525040631152499155
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,6 +776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8786295432562796211}
   - component: {fileID: 891056548203807055}
+  - component: {fileID: 1591272904744082179}
   m_Layer: 0
   m_Name: R_Leg3
   m_TagString: Untagged
@@ -765,6 +825,25 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!114 &1591272904744082179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6525040631152499155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5ad28dc93794c40b168e6f6461a950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feetPoint: {fileID: 1060590851438838856}
+  feetTarget: {fileID: 9155867263019602733}
+  spiderController: {fileID: 7773524638843151364}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  distanceBeforeReset: 3
 --- !u!1 &7223869795809865046
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72469944527316626}
   - component: {fileID: 3669766798834346851}
+  - component: {fileID: 8839373953807917889}
   m_Layer: 0
   m_Name: L_Leg2
   m_TagString: Untagged
@@ -823,6 +903,25 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!114 &8839373953807917889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7223869795809865046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5ad28dc93794c40b168e6f6461a950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feetPoint: {fileID: 7792865485805977430}
+  feetTarget: {fileID: 5171989965590163321}
+  spiderController: {fileID: 7773524638843151364}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  distanceBeforeReset: 3
 --- !u!1 &7452640040300436913
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6559508050756380688}
   - component: {fileID: 941583236511334760}
+  - component: {fileID: 702227899513970063}
   m_Layer: 0
   m_Name: L_Leg1
   m_TagString: Untagged
@@ -881,6 +981,25 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!114 &702227899513970063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7452640040300436913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5ad28dc93794c40b168e6f6461a950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feetPoint: {fileID: 5131417826139513008}
+  feetTarget: {fileID: 5674238735641558526}
+  spiderController: {fileID: 7773524638843151364}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  distanceBeforeReset: 3
 --- !u!1 &7460684743150870417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,6 +1381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4353304717006297176}
   - component: {fileID: 3250496236728128925}
+  - component: {fileID: 7703144873264768440}
   m_Layer: 0
   m_Name: R_Leg2
   m_TagString: Untagged
@@ -1310,6 +1430,25 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!114 &7703144873264768440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9060942887026429365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5ad28dc93794c40b168e6f6461a950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feetPoint: {fileID: 8966487901455314411}
+  feetTarget: {fileID: 7559968821419961101}
+  spiderController: {fileID: 7773524638843151364}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  distanceBeforeReset: 3
 --- !u!1 &9155867263019602733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,11 +1552,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8417361359673230750, guid: 9b125a1878c12704eb688e0c3a4e40de,
-        type: 3}
-      propertyPath: m_Quality
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
