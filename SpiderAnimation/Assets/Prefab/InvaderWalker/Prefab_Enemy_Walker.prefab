@@ -1291,6 +1291,8 @@ GameObject:
   - component: {fileID: 6220635313497496032}
   - component: {fileID: 8345888697428890293}
   - component: {fileID: 9072908031109062191}
+  - component: {fileID: 5422074966032036008}
+  - component: {fileID: 876248293465646366}
   m_Layer: 0
   m_Name: Prefab_Enemy_Walker
   m_TagString: Untagged
@@ -1353,6 +1355,41 @@ MonoBehaviour:
   - m_Rig: {fileID: 8158251805207444259}
     m_Active: 1
   m_Effectors: []
+--- !u!195 &5422074966032036008
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6921886405472955379}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &876248293465646366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6921886405472955379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a1c5d0ea67eba24fa7a19f5145f1062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!1 &6932525286545087340
 GameObject:
   m_ObjectHideFlags: 0

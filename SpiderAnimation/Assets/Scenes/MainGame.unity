@@ -595,6 +595,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 876248293465646366, guid: 4091855443b6b5a4b9975279653b3157,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1994339790}
     - target: {fileID: 6220635313497496032, guid: 4091855443b6b5a4b9975279653b3157,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -816,6 +821,7 @@ GameObject:
   - component: {fileID: 524300848}
   - component: {fileID: 524300847}
   - component: {fileID: 524300846}
+  - component: {fileID: 524300850}
   m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
@@ -910,6 +916,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 118144503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &524300850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524300845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: b933e9baec5983c4fb65183c2d8d9505, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &595171519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,6 +1930,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1994339790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1994339791}
+  m_Layer: 0
+  m_Name: WalkerTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1994339791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994339790}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.73, y: 0.42, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2011902411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2037,3 +2105,4 @@ SceneRoots:
   - {fileID: 595171523}
   - {fileID: 734163017}
   - {fileID: 264110439}
+  - {fileID: 1994339791}
